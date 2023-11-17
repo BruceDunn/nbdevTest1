@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "nbdevTest1"
+  site-url: "https://BruceDunn.github.io/nbdevTest1"
+  description: "Working through the tutorial."
+  repo-branch: main
+  repo-url: "https://github.com/BruceDunn/nbdevTest1"
