@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "cards.html",
+    "href": "cards.html",
+    "title": "Cards",
+    "section": "",
+    "text": "We will be using numbers to represent card suits and ranks. These are the suits:\nsuits\n\n['Clubs', 'Diamonds', 'Spades', 'Hearts']\nrank\n\n[None, 'A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']\nsource"
+  },
+  {
+    "objectID": "cards.html#comparison-operators",
+    "href": "cards.html#comparison-operators",
+    "title": "Cards",
+    "section": "Comparison Operators",
+    "text": "Comparison Operators\n@patch (from fastcore.utils) can be used to add a method to an already defined class. Normally you’d define the method within the class but in a REPL sort of environment you may want to define the new method closer to where you’re actually using it because you may write it at that point in time and don’t want to scroll back up to where the class was defined. When code is output, it will all be in the same output file.\n\nassert Card(suit=1, rank=3) &lt; Card(suit=2, rank=3)\n\n\nassert Card(suit=3, rank=3) &gt; Card(suit=2, rank=3)\nassert not Card(suit=1, rank=3)&gt;Card(suit=2, rank=3)\n\n\ntest_eq(Card(suit=1, rank=1), Card(suit=1, rank=1))\ntest_ne(Card(suit=1, rank=1), Card(suit=1, rank=2))"
+  },
+  {
+    "objectID": "deck.html",
+    "href": "deck.html",
+    "title": "Deck",
+    "section": "",
+    "text": "source\n\nDeck\n\n Deck ()\n\nInitialize self. See help(type(self)) for accurate signature.\n\nDeck()\n\nAClubs; 2Clubs; 3Clubs; 4Clubs; 5Clubs; 6Clubs; 7Clubs; 8Clubs; 9Clubs; 10Clubs; JClubs; QClubs; KClubs; ADiamonds; 2Diamonds; 3Diamonds; 4Diamonds; 5Diamonds; 6Diamonds; 7Diamonds; 8Diamonds; 9Diamonds; 10Diamonds; JDiamonds; QDiamonds; KDiamonds; ASpades; 2Spades; 3Spades; 4Spades; 5Spades; 6Spades; 7Spades; 8Spades; 9Spades; 10Spades; JSpades; QSpades; KSpades; AHearts; 2Hearts; 3Hearts; 4Hearts; 5Hearts; 6Hearts; 7Hearts; 8Hearts; 9Hearts; 10Hearts; JHearts; QHearts; KHearts\n\n\n\nCard??\n\n\nInit signature: Card(suit: int, rank: int)\nSource:        \nclass Card:\n    \"A playing card\"\n    def __init__(self, \n                 suit:int, # An index into `suits` \n                 rank:int): # An index into `ranks`\n        self.suit, self.rank = suit, rank\n    def __str__(self):\n        return f\"{rank[self.rank]}{suits[self.suit]}\"\n    __repr__ = __str__\nFile:           ~/ai/git/nbdevTest1/nbdevTest1/cards.py\nType:           type\nSubclasses:"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nbdevTest1",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation.\nA deck of cards demo of nbdev based on ideas from Thinking in Python"
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "nbdevTest1",
+    "section": "Install",
+    "text": "Install\npip install nbdevTest1"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "nbdevTest1",
+    "section": "How to use",
+    "text": "How to use\nThis lib provides a Card class.\n\nCard(1,3)\n\n3Diamonds\n\n\nSuits are numbered based on this:\n\nsuits\n\n['Clubs', 'Diamonds', 'Spades', 'Hearts']"
+  }
+]
